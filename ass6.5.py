@@ -7,6 +7,4 @@ pos = text.find(':')
 number_str = text[pos+1:].strip()
 
 # convert to float
-number = float(number_str)
-
-print(number)
+print(float(number_str))
