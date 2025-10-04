@@ -2,6 +2,9 @@ fh = open("mbox-short.txt")
 count = 0
 for line in fh:
     line = line.rstrip()
+    list1 = line.split()
+    if len(list1) < 1:
+        continue
     if line.startswith("From:"):
         word = line.split()
         print(word[1])
